@@ -93,9 +93,9 @@ public class LoginTest {
     @BeforeClass // i added these codes because i find ut tht way so that i can run all the tests
     public void setup() {
        //driver = DriverUtils.getChromeDriver();
-     //  driver = DriverUtils.getChromeRemoteDriver();
+       driver = DriverUtils.getChromeRemoteDriver();
        //driver = DriverUtils.getFirefoxRemoteDriver();
-      driver = DriverUtils.getIERemoteDriver();
+     // driver = DriverUtils.getIERemoteDriver();
         driver.get("http://newtours.demoaut.com/mercurywelcome.php");
     }
 
