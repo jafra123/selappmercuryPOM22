@@ -24,9 +24,9 @@ public class BaseTest {
         driver.get("http://newtours.demoaut.com/mercurywelcome.php");
       //  driver.manage().window().maximize();
     }
-    @AfterClass
-    public void teardown() {
-      //  driver.quit();
-    }
+  //  @AfterClass
+  // public void teardown() {
+       // driver.quit();
+   // }
     
 }

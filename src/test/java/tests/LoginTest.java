@@ -15,6 +15,7 @@ import org.testng.annotations.BeforeClass;
 import org.testng.annotations.Test;
 import pages.BookAFlight;
 import pages.FlightFinder;
+import pages.HomaPageButton;
 import pages.LoginPage;
 import pages.SelectFlight;
 
@@ -26,7 +27,17 @@ public class LoginTest {
     private boolean acceptNextAlert = true;
     private StringBuffer verificationErrors = new StringBuffer();
 
-    @Test(priority = 1)
+    @Test(priority =0)
+    public void testHomeButton (){
+        HomaPageButton homepagebutton = new HomaPageButton(driver);
+        homepagebutton.CONTACT();
+        homepagebutton.SIGNON();
+        homepagebutton.SUPPORT();
+      //  homepagebutton.SalonTravel();
+         homepagebutton.REGISTER();
+    }
+     
+        @Test(priority = 1,groups = {"smoke"})
     // @Test(groups = {"smoke"})
     /*public void testLoginPO() {
         SinginPage loginpage = new SinginPage(driver);
@@ -92,8 +103,8 @@ public class LoginTest {
 
     @BeforeClass // i added these codes because i find ut tht way so that i can run all the tests
     public void setup() {
-       //driver = DriverUtils.getChromeDriver();
-       driver = DriverUtils.getChromeRemoteDriver();
+       driver = DriverUtils.getChromeDriver();
+       //driver = DriverUtils.getChromeRemoteDriver();
        //driver = DriverUtils.getFirefoxRemoteDriver();
      // driver = DriverUtils.getIERemoteDriver();
         driver.get("http://newtours.demoaut.com/mercurywelcome.php");

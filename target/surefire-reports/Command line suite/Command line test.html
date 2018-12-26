@@ -55,11 +55,11 @@ function toggleAllBoxes() {
 <body>
 <h2 align='center'>Command line test</h2><table border='1' align="center">
 <tr>
-<td>Tests passed/Failed/Skipped:</td><td>0/0/4</td>
+<td>Tests passed/Failed/Skipped:</td><td>5/0/0</td>
 </tr><tr>
-<td>Started on:</td><td>Sun Dec 23 23:32:52 CST 2018</td>
+<td>Started on:</td><td>Tue Dec 25 18:24:34 CST 2018</td>
 </tr>
-<tr><td>Total time:</td><td>1 seconds (1852 ms)</td>
+<tr><td>Total time:</td><td>21 seconds (21847 ms)</td>
 </tr><tr>
 <td>Included groups:</td><td></td>
 </tr><tr>
@@ -67,272 +67,8 @@ function toggleAllBoxes() {
 </tr>
 </table><p/>
 <small><i>(Hover the method name to see the test class name)</i></small><p/>
-<table width='100%' border='1' class='invocation-failed'>
-<tr><td colspan='4' align='center'><b>FAILED CONFIGURATIONS</b></td></tr>
-<tr><td><b>Test method</b></td>
-<td width="30%"><b>Exception</b></td>
-<td width="10%"><b>Time (seconds)</b></td>
-<td><b>Instance</b></td>
-</tr>
-<tr>
-<td title='tests.LoginTest.setup()'><b>setup</b><br>Test class: tests.LoginTest</td>
-<td><div><pre>org.openqa.selenium.SessionNotCreatedException: Unable to create new service: InternetExplorerDriverService
-Build info: version: &apos;3.13.0&apos;, revision: &apos;2f0d292&apos;, time: &apos;2018-06-25T15:32:19.891Z&apos;
-System info: host: &apos;JAFRA&apos;, ip: &apos;10.0.0.19&apos;, os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;1.8.0_121&apos;
-Driver info: driver.version: unknown
-Command duration or timeout: 379 milliseconds
-	at org.openqa.selenium.remote.ErrorHandler.createThrowable(ErrorHandler.java:214)
-	at org.openqa.selenium.remote.ErrorHandler.throwIfResponseFailed(ErrorHandler.java:166)
-	at org.openqa.selenium.remote.JsonWireProtocolResponse.lambda$new$0(JsonWireProtocolResponse.java:53)
-	at org.openqa.selenium.remote.JsonWireProtocolResponse.lambda$getResponseFunction$2(JsonWireProtocolResponse.java:91)
-	at org.openqa.selenium.remote.ProtocolHandshake.lambda$createSession$0(ProtocolHandshake.java:123)
-	at java.util.stream.ReferencePipeline$3$1.accept(ReferencePipeline.java:193)
-	at java.util.Spliterators$ArraySpliterator.tryAdvance(Spliterators.java:958)
-	at java.util.stream.ReferencePipeline.forEachWithCancel(ReferencePipeline.java:126)
-	at java.util.stream.AbstractPipeline.copyIntoWithCancel(AbstractPipeline.java:498)
-	at java.util.stream.AbstractPipeline.copyInto(AbstractPipeline.java:485)
-	at java.util.stream.AbstractPipeline.wrapAndCopyInto(AbstractPipeline.java:471)
-	at java.util.stream.FindOps$FindOp.evaluateSequential(FindOps.java:152)
-	at java.util.stream.AbstractPipeline.evaluate(AbstractPipeline.java:234)
-	at java.util.stream.ReferencePipeline.findFirst(ReferencePipeline.java:464)
-	at org.openqa.selenium.remote.ProtocolHandshake.createSession(ProtocolHandshake.java:126)
-	at org.openqa.selenium.remote.ProtocolHandshake.createSession(ProtocolHandshake.java:73)
-	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:136)
-	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:548)
-	at org.openqa.selenium.remote.RemoteWebDriver.startSession(RemoteWebDriver.java:212)
-	at org.openqa.selenium.remote.RemoteWebDriver.&lt;init&gt;(RemoteWebDriver.java:130)
-	at org.openqa.selenium.remote.RemoteWebDriver.&lt;init&gt;(RemoteWebDriver.java:143)
-	at tests.DriverUtils.getIERemoteDriver(DriverUtils.java:78)
-	at tests.LoginTest.setup(LoginTest.java:98)
-	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1142)
-	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:617)
-	at java.lang.Thread.run(Thread.java:745)
-Caused by: org.openqa.selenium.SessionNotCreatedException: Unable to create new service: InternetExplorerDriverService
-Build info: version: &apos;3.13.0&apos;, revision: &apos;2f0d292&apos;, time: &apos;2018-06-25T15:32:19.891Z&apos;
-System info: host: &apos;JAFRA&apos;, ip: &apos;10.0.0.19&apos;, os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;1.8.0_121&apos;
-Driver info: driver.version: unknown
-Build info: version: &apos;3.13.0&apos;, revision: &apos;2f0d292&apos;, time: &apos;2018-06-25T15:24:21.231Z&apos;
-System info: host: &apos;JAFRA&apos;, ip: &apos;10.0.0.19&apos;, os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;1.8.0_121&apos;
-Driver info: driver.version: unknown
-	at org.openqa.selenium.remote.server.ServicedSession$Factory.lambda$get$0(ServicedSession.java:134)
-	at org.openqa.selenium.remote.server.ServicedSession$Factory.apply(ServicedSession.java:151)
-	at org.openqa.selenium.remote.server.ActiveSessionFactory.lambda$apply$12(ActiveSessionFactory.java:177)
-	at java.util.stream.ReferencePipeline$3$1.accept(Unknown Source)
-	at java.util.stream.ReferencePipeline$11$1.accept(Unknown Source)
-	at java.util.stream.ReferencePipeline$2$1.accept(Unknown Source)
-	at java.util.Spliterators$ArraySpliterator.tryAdvance(Unknown Source)
-	at java.util.stream.ReferencePipeline.forEachWithCancel(Unknown Source)
-	at java.util.stream.AbstractPipeline.copyIntoWithCancel(Unknown Source)
-	at java.util.stream.AbstractPipeline.copyInto(Unknown Source)
-	at java.util.stream.AbstractPipeline.wrapAndCopyInto(Unknown Source)
-	at java.util.stream.FindOps$FindOp.evaluateSequential(Unknown Source)
-	at java.util.stream.AbstractPipeline.evaluate(Unknown Source)
-	at java.util.stream.ReferencePipeline.findFirst(Unknown Source)
-	at org.openqa.selenium.remote.server.ActiveSessionFactory.apply(ActiveSessionFactory.java:180)
-	at org.openqa.selenium.remote.server.NewSessionPipeline.lambda$null$2(NewSessionPipeline.java:65)
-	at java.util.stream.ReferencePipeline$3$1.accept(Unknown Source)
-	at java.util.stream.ReferencePipeline$2$1.accept(Unknown Source)
-	at java.util.Collections$2.tryAdvance(Unknown Source)
-	at java.util.stream.ReferencePipeline.forEachWithCancel(Unknown Source)
-	at java.util.stream.AbstractPipeline.copyIntoWithCancel(Unknown Source)
-	at java.util.stream.AbstractPipeline.copyInto(Unknown Source)
-	at java.util.stream.AbstractPipeline.wrapAndCopyInto(Unknown Source)
-	at java.util.stream.FindOps$FindOp.evaluateSequential(Unknown Source)
-	at java.util.stream.AbstractPipeline.evaluate(Unknown Source)
-	at java.util.stream.ReferencePipeline.findFirst(Unknown Source)
-	at org.openqa.selenium.remote.server.NewSessionPipeline.lambda$createNewSession$3(NewSessionPipeline.java:68)
-	at java.util.stream.ReferencePipeline$3$1.accept(Unknown Source)
-	at java.util.stream.ReferencePipeline$3$1.accept(Unknown Source)
-	at java.util.stream.ReferencePipeline$3$1.accept(Unknown Source)
-	at java.util.stream.DistinctOps$1$2.accept(Unknown Source)
-	at java.util.stream.ReferencePipeline$2$1.accept(Unknown Source)
-	at java.util.stream.ReferencePipeline$3$1.accept(Unknown Source)
-	at java.util.stream.ReferencePipeline$2$1.accept(Unknown Source)
-	at java.util.stream.Streams$StreamBuilderImpl.tryAdvance(Unknown Source)
-	at java.util.stream.Streams$ConcatSpliterator.tryAdvance(Unknown Source)
-	at java.util.stream.ReferencePipeline.forEachWithCancel(Unknown Source)
-	at java.util.stream.AbstractPipeline.copyIntoWithCancel(Unknown Source)
-	at java.util.stream.AbstractPipeline.copyInto(Unknown Source)
-	at java.util.stream.AbstractPipeline.wrapAndCopyInto(Unknown Source)
-	at java.util.stream.FindOps$FindOp.evaluateSequential(Unknown Source)
-	at java.util.stream.AbstractPipeline.evaluate(Unknown Source)
-	at java.util.stream.ReferencePipeline.findFirst(Unknown Source)
-	at org.openqa.selenium.remote.server.NewSessionPipeline.createNewSession(NewSessionPipeline.java:71)
-	at org.openqa.selenium.remote.server.commandhandler.BeginSession.execute(BeginSession.java:65)
-	at org.openqa.selenium.remote.server.WebDriverServlet.lambda$handle$3(WebDriverServlet.java:247)
-	at java.util.concurrent.Executors$RunnableAdapter.call(Unknown Source)
-	at java.util.concurrent.FutureTask.run(Unknown Source)
-	at java.util.concurrent.ThreadPoolExecutor.runWorker(Unknown Source)
-	at java.util.concurrent.ThreadPoolExecutor$Worker.run(Unknown Source)
-	at java.lang.Thread.run(Unknown Source)
-... Removed 14 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace2061788066", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
-<div class='stack-trace' id='stack-trace2061788066'><pre>org.openqa.selenium.SessionNotCreatedException: Unable to create new service: InternetExplorerDriverService
-Build info: version: &apos;3.13.0&apos;, revision: &apos;2f0d292&apos;, time: &apos;2018-06-25T15:32:19.891Z&apos;
-System info: host: &apos;JAFRA&apos;, ip: &apos;10.0.0.19&apos;, os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;1.8.0_121&apos;
-Driver info: driver.version: unknown
-Command duration or timeout: 379 milliseconds
-	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
-	at sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
-	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
-	at java.lang.reflect.Constructor.newInstance(Constructor.java:423)
-	at org.openqa.selenium.remote.ErrorHandler.createThrowable(ErrorHandler.java:214)
-	at org.openqa.selenium.remote.ErrorHandler.throwIfResponseFailed(ErrorHandler.java:166)
-	at org.openqa.selenium.remote.JsonWireProtocolResponse.lambda$new$0(JsonWireProtocolResponse.java:53)
-	at org.openqa.selenium.remote.JsonWireProtocolResponse.lambda$getResponseFunction$2(JsonWireProtocolResponse.java:91)
-	at org.openqa.selenium.remote.ProtocolHandshake.lambda$createSession$0(ProtocolHandshake.java:123)
-	at java.util.stream.ReferencePipeline$3$1.accept(ReferencePipeline.java:193)
-	at java.util.Spliterators$ArraySpliterator.tryAdvance(Spliterators.java:958)
-	at java.util.stream.ReferencePipeline.forEachWithCancel(ReferencePipeline.java:126)
-	at java.util.stream.AbstractPipeline.copyIntoWithCancel(AbstractPipeline.java:498)
-	at java.util.stream.AbstractPipeline.copyInto(AbstractPipeline.java:485)
-	at java.util.stream.AbstractPipeline.wrapAndCopyInto(AbstractPipeline.java:471)
-	at java.util.stream.FindOps$FindOp.evaluateSequential(FindOps.java:152)
-	at java.util.stream.AbstractPipeline.evaluate(AbstractPipeline.java:234)
-	at java.util.stream.ReferencePipeline.findFirst(ReferencePipeline.java:464)
-	at org.openqa.selenium.remote.ProtocolHandshake.createSession(ProtocolHandshake.java:126)
-	at org.openqa.selenium.remote.ProtocolHandshake.createSession(ProtocolHandshake.java:73)
-	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:136)
-	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:548)
-	at org.openqa.selenium.remote.RemoteWebDriver.startSession(RemoteWebDriver.java:212)
-	at org.openqa.selenium.remote.RemoteWebDriver.&lt;init&gt;(RemoteWebDriver.java:130)
-	at org.openqa.selenium.remote.RemoteWebDriver.&lt;init&gt;(RemoteWebDriver.java:143)
-	at tests.DriverUtils.getIERemoteDriver(DriverUtils.java:78)
-	at tests.LoginTest.setup(LoginTest.java:98)
-	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
-	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
-	at java.lang.reflect.Method.invoke(Method.java:498)
-	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:84)
-	at org.testng.internal.Invoker.invokeConfigurationMethod(Invoker.java:564)
-	at org.testng.internal.Invoker.invokeConfigurations(Invoker.java:213)
-	at org.testng.internal.Invoker.invokeConfigurations(Invoker.java:138)
-	at org.testng.internal.TestMethodWorker.invokeBeforeClassMethods(TestMethodWorker.java:175)
-	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:107)
-	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1142)
-	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:617)
-	at java.lang.Thread.run(Thread.java:745)
-Caused by: org.openqa.selenium.SessionNotCreatedException: Unable to create new service: InternetExplorerDriverService
-Build info: version: &apos;3.13.0&apos;, revision: &apos;2f0d292&apos;, time: &apos;2018-06-25T15:32:19.891Z&apos;
-System info: host: &apos;JAFRA&apos;, ip: &apos;10.0.0.19&apos;, os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;1.8.0_121&apos;
-Driver info: driver.version: unknown
-Build info: version: &apos;3.13.0&apos;, revision: &apos;2f0d292&apos;, time: &apos;2018-06-25T15:24:21.231Z&apos;
-System info: host: &apos;JAFRA&apos;, ip: &apos;10.0.0.19&apos;, os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;1.8.0_121&apos;
-Driver info: driver.version: unknown
-	at org.openqa.selenium.remote.server.ServicedSession$Factory.lambda$get$0(ServicedSession.java:134)
-	at org.openqa.selenium.remote.server.ServicedSession$Factory.apply(ServicedSession.java:151)
-	at org.openqa.selenium.remote.server.ActiveSessionFactory.lambda$apply$12(ActiveSessionFactory.java:177)
-	at java.util.stream.ReferencePipeline$3$1.accept(Unknown Source)
-	at java.util.stream.ReferencePipeline$11$1.accept(Unknown Source)
-	at java.util.stream.ReferencePipeline$2$1.accept(Unknown Source)
-	at java.util.Spliterators$ArraySpliterator.tryAdvance(Unknown Source)
-	at java.util.stream.ReferencePipeline.forEachWithCancel(Unknown Source)
-	at java.util.stream.AbstractPipeline.copyIntoWithCancel(Unknown Source)
-	at java.util.stream.AbstractPipeline.copyInto(Unknown Source)
-	at java.util.stream.AbstractPipeline.wrapAndCopyInto(Unknown Source)
-	at java.util.stream.FindOps$FindOp.evaluateSequential(Unknown Source)
-	at java.util.stream.AbstractPipeline.evaluate(Unknown Source)
-	at java.util.stream.ReferencePipeline.findFirst(Unknown Source)
-	at org.openqa.selenium.remote.server.ActiveSessionFactory.apply(ActiveSessionFactory.java:180)
-	at org.openqa.selenium.remote.server.NewSessionPipeline.lambda$null$2(NewSessionPipeline.java:65)
-	at java.util.stream.ReferencePipeline$3$1.accept(Unknown Source)
-	at java.util.stream.ReferencePipeline$2$1.accept(Unknown Source)
-	at java.util.Collections$2.tryAdvance(Unknown Source)
-	at java.util.stream.ReferencePipeline.forEachWithCancel(Unknown Source)
-	at java.util.stream.AbstractPipeline.copyIntoWithCancel(Unknown Source)
-	at java.util.stream.AbstractPipeline.copyInto(Unknown Source)
-	at java.util.stream.AbstractPipeline.wrapAndCopyInto(Unknown Source)
-	at java.util.stream.FindOps$FindOp.evaluateSequential(Unknown Source)
-	at java.util.stream.AbstractPipeline.evaluate(Unknown Source)
-	at java.util.stream.ReferencePipeline.findFirst(Unknown Source)
-	at org.openqa.selenium.remote.server.NewSessionPipeline.lambda$createNewSession$3(NewSessionPipeline.java:68)
-	at java.util.stream.ReferencePipeline$3$1.accept(Unknown Source)
-	at java.util.stream.ReferencePipeline$3$1.accept(Unknown Source)
-	at java.util.stream.ReferencePipeline$3$1.accept(Unknown Source)
-	at java.util.stream.DistinctOps$1$2.accept(Unknown Source)
-	at java.util.stream.ReferencePipeline$2$1.accept(Unknown Source)
-	at java.util.stream.ReferencePipeline$3$1.accept(Unknown Source)
-	at java.util.stream.ReferencePipeline$2$1.accept(Unknown Source)
-	at java.util.stream.Streams$StreamBuilderImpl.tryAdvance(Unknown Source)
-	at java.util.stream.Streams$ConcatSpliterator.tryAdvance(Unknown Source)
-	at java.util.stream.ReferencePipeline.forEachWithCancel(Unknown Source)
-	at java.util.stream.AbstractPipeline.copyIntoWithCancel(Unknown Source)
-	at java.util.stream.AbstractPipeline.copyInto(Unknown Source)
-	at java.util.stream.AbstractPipeline.wrapAndCopyInto(Unknown Source)
-	at java.util.stream.FindOps$FindOp.evaluateSequential(Unknown Source)
-	at java.util.stream.AbstractPipeline.evaluate(Unknown Source)
-	at java.util.stream.ReferencePipeline.findFirst(Unknown Source)
-	at org.openqa.selenium.remote.server.NewSessionPipeline.createNewSession(NewSessionPipeline.java:71)
-	at org.openqa.selenium.remote.server.commandhandler.BeginSession.execute(BeginSession.java:65)
-	at org.openqa.selenium.remote.server.WebDriverServlet.lambda$handle$3(WebDriverServlet.java:247)
-	at java.util.concurrent.Executors$RunnableAdapter.call(Unknown Source)
-	at java.util.concurrent.FutureTask.run(Unknown Source)
-	at java.util.concurrent.ThreadPoolExecutor.runWorker(Unknown Source)
-	at java.util.concurrent.ThreadPoolExecutor$Worker.run(Unknown Source)
-	at java.lang.Thread.run(Unknown Source)
-</pre></div></td>
-<td>0</td>
-<td>tests.LoginTest@73f792cf</td></tr>
-</table><p>
-<table width='100%' border='1' class='invocation-skipped'>
-<tr><td colspan='4' align='center'><b>SKIPPED CONFIGURATIONS</b></td></tr>
-<tr><td><b>Test method</b></td>
-<td width="30%"><b>Exception</b></td>
-<td width="10%"><b>Time (seconds)</b></td>
-<td><b>Instance</b></td>
-</tr>
-<tr>
-<td title='tests.LoginTest.setUpMethod()'><b>setUpMethod</b><br>Test class: tests.LoginTest</td>
-<td></td>
-<td>0</td>
-<td>tests.LoginTest@73f792cf</td></tr>
-<tr>
-<td title='tests.LoginTest.setUpMethod()'><b>setUpMethod</b><br>Test class: tests.LoginTest</td>
-<td></td>
-<td>0</td>
-<td>tests.LoginTest@73f792cf</td></tr>
-<tr>
-<td title='tests.LoginTest.setUpMethod()'><b>setUpMethod</b><br>Test class: tests.LoginTest</td>
-<td></td>
-<td>0</td>
-<td>tests.LoginTest@73f792cf</td></tr>
-<tr>
-<td title='tests.LoginTest.setUpMethod()'><b>setUpMethod</b><br>Test class: tests.LoginTest</td>
-<td></td>
-<td>0</td>
-<td>tests.LoginTest@73f792cf</td></tr>
-<tr>
-<td title='tests.LoginTest.tearDownMethod()'><b>tearDownMethod</b><br>Test class: tests.LoginTest</td>
-<td></td>
-<td>0</td>
-<td>tests.LoginTest@73f792cf</td></tr>
-<tr>
-<td title='tests.LoginTest.tearDownMethod()'><b>tearDownMethod</b><br>Test class: tests.LoginTest</td>
-<td></td>
-<td>0</td>
-<td>tests.LoginTest@73f792cf</td></tr>
-<tr>
-<td title='tests.LoginTest.tearDownMethod()'><b>tearDownMethod</b><br>Test class: tests.LoginTest</td>
-<td></td>
-<td>0</td>
-<td>tests.LoginTest@73f792cf</td></tr>
-<tr>
-<td title='tests.LoginTest.tearDownMethod()'><b>tearDownMethod</b><br>Test class: tests.LoginTest</td>
-<td></td>
-<td>0</td>
-<td>tests.LoginTest@73f792cf</td></tr>
-<tr>
-<td title='tests.LoginTest.tearDownClass()'><b>tearDownClass</b><br>Test class: tests.LoginTest</td>
-<td></td>
-<td>0</td>
-<td>tests.LoginTest@73f792cf</td></tr>
-<tr>
-<td title='tests.LoginTest.teardown()'><b>teardown</b><br>Test class: tests.LoginTest</td>
-<td></td>
-<td>0</td>
-<td>tests.LoginTest@73f792cf</td></tr>
-</table><p>
-<table width='100%' border='1' class='invocation-skipped'>
-<tr><td colspan='4' align='center'><b>SKIPPED TESTS</b></td></tr>
+<table width='100%' border='1' class='invocation-passed'>
+<tr><td colspan='4' align='center'><b>PASSED TESTS</b></td></tr>
 <tr><td><b>Test method</b></td>
 <td width="30%"><b>Exception</b></td>
 <td width="10%"><b>Time (seconds)</b></td>
@@ -341,23 +77,28 @@ Driver info: driver.version: unknown
 <tr>
 <td title='tests.LoginTest.testFlightFinder()'><b>testFlightFinder</b><br>Test class: tests.LoginTest</td>
 <td></td>
-<td>0</td>
-<td>tests.LoginTest@73f792cf</td></tr>
+<td>2</td>
+<td>tests.LoginTest@3567135c</td></tr>
+<tr>
+<td title='tests.LoginTest.testHomeButton()'><b>testHomeButton</b><br>Test class: tests.LoginTest</td>
+<td></td>
+<td>3</td>
+<td>tests.LoginTest@3567135c</td></tr>
 <tr>
 <td title='tests.LoginTest.testLoginPO()'><b>testLoginPO</b><br>Test class: tests.LoginTest</td>
 <td></td>
-<td>0</td>
-<td>tests.LoginTest@73f792cf</td></tr>
+<td>3</td>
+<td>tests.LoginTest@3567135c</td></tr>
 <tr>
 <td title='tests.LoginTest.testtestBookAflight()'><b>testtestBookAflight</b><br>Test class: tests.LoginTest</td>
 <td></td>
-<td>0</td>
-<td>tests.LoginTest@73f792cf</td></tr>
+<td>5</td>
+<td>tests.LoginTest@3567135c</td></tr>
 <tr>
 <td title='tests.LoginTest.testtestTestSelectFlight()'><b>testtestTestSelectFlight</b><br>Test class: tests.LoginTest</td>
 <td></td>
-<td>0</td>
-<td>tests.LoginTest@73f792cf</td></tr>
+<td>1</td>
+<td>tests.LoginTest@3567135c</td></tr>
 </table><p>
 </body>
 </html>

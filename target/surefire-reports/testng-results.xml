@@ -1,191 +1,91 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results skipped="4" failed="0" total="4" passed="0">
+<testng-results skipped="0" failed="0" total="5" passed="5">
   <reporter-output>
   </reporter-output>
-  <suite name="Command line suite" duration-ms="1852" started-at="2018-12-24T05:32:52Z" finished-at="2018-12-24T05:32:54Z">
+  <suite name="Command line suite" duration-ms="21847" started-at="2018-12-26T00:24:34Z" finished-at="2018-12-26T00:24:55Z">
     <groups>
+      <group name="smoke">
+        <method signature="LoginTest.testLoginPO()[pri:0, instance:tests.LoginTest@3567135c]" name="testLoginPO" class="tests.LoginTest"/>
+      </group> <!-- smoke -->
     </groups>
-    <test name="Command line test" duration-ms="1852" started-at="2018-12-24T05:32:52Z" finished-at="2018-12-24T05:32:54Z">
+    <test name="Command line test" duration-ms="21847" started-at="2018-12-26T00:24:34Z" finished-at="2018-12-26T00:24:55Z">
       <class name="tests.LoginTest">
-        <test-method status="PASS" signature="setUpClass()[pri:0, instance:tests.LoginTest@73f792cf]" name="setUpClass" is-config="true" duration-ms="14" started-at="2018-12-23T23:32:52Z" finished-at="2018-12-23T23:32:52Z">
+        <test-method status="PASS" signature="setUpClass()[pri:0, instance:tests.LoginTest@3567135c]" name="setUpClass" is-config="true" duration-ms="7" started-at="2018-12-25T18:24:34Z" finished-at="2018-12-25T18:24:34Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setUpClass -->
-        <test-method status="FAIL" signature="setup()[pri:0, instance:tests.LoginTest@73f792cf]" name="setup" is-config="true" duration-ms="0" started-at="2018-12-23T23:32:52Z" finished-at="2018-12-23T23:32:52Z">
-          <exception class="org.openqa.selenium.SessionNotCreatedException">
-            <message>
-              <![CDATA[Unable to create new service: InternetExplorerDriverService
-Build info: version: '3.13.0', revision: '2f0d292', time: '2018-06-25T15:32:19.891Z'
-System info: host: 'JAFRA', ip: '10.0.0.19', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_121'
-Driver info: driver.version: unknown
-Command duration or timeout: 379 milliseconds]]>
-            </message>
-            <full-stacktrace>
-              <![CDATA[org.openqa.selenium.SessionNotCreatedException: Unable to create new service: InternetExplorerDriverService
-Build info: version: '3.13.0', revision: '2f0d292', time: '2018-06-25T15:32:19.891Z'
-System info: host: 'JAFRA', ip: '10.0.0.19', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_121'
-Driver info: driver.version: unknown
-Command duration or timeout: 379 milliseconds
-	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
-	at sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
-	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
-	at java.lang.reflect.Constructor.newInstance(Constructor.java:423)
-	at org.openqa.selenium.remote.ErrorHandler.createThrowable(ErrorHandler.java:214)
-	at org.openqa.selenium.remote.ErrorHandler.throwIfResponseFailed(ErrorHandler.java:166)
-	at org.openqa.selenium.remote.JsonWireProtocolResponse.lambda$new$0(JsonWireProtocolResponse.java:53)
-	at org.openqa.selenium.remote.JsonWireProtocolResponse.lambda$getResponseFunction$2(JsonWireProtocolResponse.java:91)
-	at org.openqa.selenium.remote.ProtocolHandshake.lambda$createSession$0(ProtocolHandshake.java:123)
-	at java.util.stream.ReferencePipeline$3$1.accept(ReferencePipeline.java:193)
-	at java.util.Spliterators$ArraySpliterator.tryAdvance(Spliterators.java:958)
-	at java.util.stream.ReferencePipeline.forEachWithCancel(ReferencePipeline.java:126)
-	at java.util.stream.AbstractPipeline.copyIntoWithCancel(AbstractPipeline.java:498)
-	at java.util.stream.AbstractPipeline.copyInto(AbstractPipeline.java:485)
-	at java.util.stream.AbstractPipeline.wrapAndCopyInto(AbstractPipeline.java:471)
-	at java.util.stream.FindOps$FindOp.evaluateSequential(FindOps.java:152)
-	at java.util.stream.AbstractPipeline.evaluate(AbstractPipeline.java:234)
-	at java.util.stream.ReferencePipeline.findFirst(ReferencePipeline.java:464)
-	at org.openqa.selenium.remote.ProtocolHandshake.createSession(ProtocolHandshake.java:126)
-	at org.openqa.selenium.remote.ProtocolHandshake.createSession(ProtocolHandshake.java:73)
-	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:136)
-	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:548)
-	at org.openqa.selenium.remote.RemoteWebDriver.startSession(RemoteWebDriver.java:212)
-	at org.openqa.selenium.remote.RemoteWebDriver.<init>(RemoteWebDriver.java:130)
-	at org.openqa.selenium.remote.RemoteWebDriver.<init>(RemoteWebDriver.java:143)
-	at tests.DriverUtils.getIERemoteDriver(DriverUtils.java:78)
-	at tests.LoginTest.setup(LoginTest.java:98)
-	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
-	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
-	at java.lang.reflect.Method.invoke(Method.java:498)
-	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:84)
-	at org.testng.internal.Invoker.invokeConfigurationMethod(Invoker.java:564)
-	at org.testng.internal.Invoker.invokeConfigurations(Invoker.java:213)
-	at org.testng.internal.Invoker.invokeConfigurations(Invoker.java:138)
-	at org.testng.internal.TestMethodWorker.invokeBeforeClassMethods(TestMethodWorker.java:175)
-	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:107)
-	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1142)
-	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:617)
-	at java.lang.Thread.run(Thread.java:745)
-Caused by: org.openqa.selenium.SessionNotCreatedException: Unable to create new service: InternetExplorerDriverService
-Build info: version: '3.13.0', revision: '2f0d292', time: '2018-06-25T15:32:19.891Z'
-System info: host: 'JAFRA', ip: '10.0.0.19', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_121'
-Driver info: driver.version: unknown
-Build info: version: '3.13.0', revision: '2f0d292', time: '2018-06-25T15:24:21.231Z'
-System info: host: 'JAFRA', ip: '10.0.0.19', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_121'
-Driver info: driver.version: unknown
-	at org.openqa.selenium.remote.server.ServicedSession$Factory.lambda$get$0(ServicedSession.java:134)
-	at org.openqa.selenium.remote.server.ServicedSession$Factory.apply(ServicedSession.java:151)
-	at org.openqa.selenium.remote.server.ActiveSessionFactory.lambda$apply$12(ActiveSessionFactory.java:177)
-	at java.util.stream.ReferencePipeline$3$1.accept(Unknown Source)
-	at java.util.stream.ReferencePipeline$11$1.accept(Unknown Source)
-	at java.util.stream.ReferencePipeline$2$1.accept(Unknown Source)
-	at java.util.Spliterators$ArraySpliterator.tryAdvance(Unknown Source)
-	at java.util.stream.ReferencePipeline.forEachWithCancel(Unknown Source)
-	at java.util.stream.AbstractPipeline.copyIntoWithCancel(Unknown Source)
-	at java.util.stream.AbstractPipeline.copyInto(Unknown Source)
-	at java.util.stream.AbstractPipeline.wrapAndCopyInto(Unknown Source)
-	at java.util.stream.FindOps$FindOp.evaluateSequential(Unknown Source)
-	at java.util.stream.AbstractPipeline.evaluate(Unknown Source)
-	at java.util.stream.ReferencePipeline.findFirst(Unknown Source)
-	at org.openqa.selenium.remote.server.ActiveSessionFactory.apply(ActiveSessionFactory.java:180)
-	at org.openqa.selenium.remote.server.NewSessionPipeline.lambda$null$2(NewSessionPipeline.java:65)
-	at java.util.stream.ReferencePipeline$3$1.accept(Unknown Source)
-	at java.util.stream.ReferencePipeline$2$1.accept(Unknown Source)
-	at java.util.Collections$2.tryAdvance(Unknown Source)
-	at java.util.stream.ReferencePipeline.forEachWithCancel(Unknown Source)
-	at java.util.stream.AbstractPipeline.copyIntoWithCancel(Unknown Source)
-	at java.util.stream.AbstractPipeline.copyInto(Unknown Source)
-	at java.util.stream.AbstractPipeline.wrapAndCopyInto(Unknown Source)
-	at java.util.stream.FindOps$FindOp.evaluateSequential(Unknown Source)
-	at java.util.stream.AbstractPipeline.evaluate(Unknown Source)
-	at java.util.stream.ReferencePipeline.findFirst(Unknown Source)
-	at org.openqa.selenium.remote.server.NewSessionPipeline.lambda$createNewSession$3(NewSessionPipeline.java:68)
-	at java.util.stream.ReferencePipeline$3$1.accept(Unknown Source)
-	at java.util.stream.ReferencePipeline$3$1.accept(Unknown Source)
-	at java.util.stream.ReferencePipeline$3$1.accept(Unknown Source)
-	at java.util.stream.DistinctOps$1$2.accept(Unknown Source)
-	at java.util.stream.ReferencePipeline$2$1.accept(Unknown Source)
-	at java.util.stream.ReferencePipeline$3$1.accept(Unknown Source)
-	at java.util.stream.ReferencePipeline$2$1.accept(Unknown Source)
-	at java.util.stream.Streams$StreamBuilderImpl.tryAdvance(Unknown Source)
-	at java.util.stream.Streams$ConcatSpliterator.tryAdvance(Unknown Source)
-	at java.util.stream.ReferencePipeline.forEachWithCancel(Unknown Source)
-	at java.util.stream.AbstractPipeline.copyIntoWithCancel(Unknown Source)
-	at java.util.stream.AbstractPipeline.copyInto(Unknown Source)
-	at java.util.stream.AbstractPipeline.wrapAndCopyInto(Unknown Source)
-	at java.util.stream.FindOps$FindOp.evaluateSequential(Unknown Source)
-	at java.util.stream.AbstractPipeline.evaluate(Unknown Source)
-	at java.util.stream.ReferencePipeline.findFirst(Unknown Source)
-	at org.openqa.selenium.remote.server.NewSessionPipeline.createNewSession(NewSessionPipeline.java:71)
-	at org.openqa.selenium.remote.server.commandhandler.BeginSession.execute(BeginSession.java:65)
-	at org.openqa.selenium.remote.server.WebDriverServlet.lambda$handle$3(WebDriverServlet.java:247)
-	at java.util.concurrent.Executors$RunnableAdapter.call(Unknown Source)
-	at java.util.concurrent.FutureTask.run(Unknown Source)
-	at java.util.concurrent.ThreadPoolExecutor.runWorker(Unknown Source)
-	at java.util.concurrent.ThreadPoolExecutor$Worker.run(Unknown Source)
-	at java.lang.Thread.run(Unknown Source)
-]]>
-            </full-stacktrace>
-          </exception> <!-- org.openqa.selenium.SessionNotCreatedException -->
+        <test-method status="PASS" signature="setup()[pri:0, instance:tests.LoginTest@3567135c]" name="setup" is-config="true" duration-ms="5453" started-at="2018-12-25T18:24:34Z" finished-at="2018-12-25T18:24:39Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setup -->
-        <test-method status="SKIP" signature="testLoginPO()[pri:0, instance:tests.LoginTest@73f792cf]" name="testLoginPO" duration-ms="0" started-at="2018-12-23T23:32:54Z" finished-at="2018-12-23T23:32:54Z">
+        <test-method status="PASS" signature="setUpMethod()[pri:0, instance:tests.LoginTest@3567135c]" name="setUpMethod" is-config="true" duration-ms="1" started-at="2018-12-25T18:24:39Z" finished-at="2018-12-25T18:24:39Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUpMethod -->
+        <test-method status="PASS" signature="testHomeButton()[pri:0, instance:tests.LoginTest@3567135c]" name="testHomeButton" duration-ms="3777" started-at="2018-12-25T18:24:39Z" finished-at="2018-12-25T18:24:43Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testHomeButton -->
+        <test-method status="PASS" signature="setUpMethod()[pri:0, instance:tests.LoginTest@3567135c]" name="setUpMethod" is-config="true" duration-ms="0" started-at="2018-12-25T18:24:43Z" finished-at="2018-12-25T18:24:43Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUpMethod -->
+        <test-method status="PASS" signature="testLoginPO()[pri:0, instance:tests.LoginTest@3567135c]" name="testLoginPO" duration-ms="3944" started-at="2018-12-25T18:24:43Z" finished-at="2018-12-25T18:24:47Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- testLoginPO -->
-        <test-method status="SKIP" signature="setUpMethod()[pri:0, instance:tests.LoginTest@73f792cf]" name="setUpMethod" is-config="true" duration-ms="0" started-at="2018-12-23T23:32:54Z" finished-at="2018-12-23T23:32:54Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- setUpMethod -->
-        <test-method status="SKIP" signature="tearDownMethod()[pri:0, instance:tests.LoginTest@73f792cf]" name="tearDownMethod" is-config="true" duration-ms="0" started-at="2018-12-23T23:32:54Z" finished-at="2018-12-23T23:32:54Z">
+        <test-method status="PASS" signature="tearDownMethod()[pri:0, instance:tests.LoginTest@3567135c]" name="tearDownMethod" is-config="true" duration-ms="0" started-at="2018-12-25T18:24:43Z" finished-at="2018-12-25T18:24:43Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDownMethod -->
-        <test-method status="SKIP" signature="testFlightFinder()[pri:0, instance:tests.LoginTest@73f792cf]" name="testFlightFinder" duration-ms="0" started-at="2018-12-23T23:32:54Z" finished-at="2018-12-23T23:32:54Z">
+        <test-method status="PASS" signature="tearDownMethod()[pri:0, instance:tests.LoginTest@3567135c]" name="tearDownMethod" is-config="true" duration-ms="0" started-at="2018-12-25T18:24:47Z" finished-at="2018-12-25T18:24:47Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDownMethod -->
+        <test-method status="PASS" signature="setUpMethod()[pri:0, instance:tests.LoginTest@3567135c]" name="setUpMethod" is-config="true" duration-ms="0" started-at="2018-12-25T18:24:47Z" finished-at="2018-12-25T18:24:47Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUpMethod -->
+        <test-method status="PASS" signature="testFlightFinder()[pri:0, instance:tests.LoginTest@3567135c]" name="testFlightFinder" duration-ms="2213" started-at="2018-12-25T18:24:47Z" finished-at="2018-12-25T18:24:49Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- testFlightFinder -->
-        <test-method status="SKIP" signature="setUpMethod()[pri:0, instance:tests.LoginTest@73f792cf]" name="setUpMethod" is-config="true" duration-ms="0" started-at="2018-12-23T23:32:54Z" finished-at="2018-12-23T23:32:54Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- setUpMethod -->
-        <test-method status="SKIP" signature="tearDownMethod()[pri:0, instance:tests.LoginTest@73f792cf]" name="tearDownMethod" is-config="true" duration-ms="0" started-at="2018-12-23T23:32:54Z" finished-at="2018-12-23T23:32:54Z">
+        <test-method status="PASS" signature="tearDownMethod()[pri:0, instance:tests.LoginTest@3567135c]" name="tearDownMethod" is-config="true" duration-ms="2" started-at="2018-12-25T18:24:49Z" finished-at="2018-12-25T18:24:49Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDownMethod -->
-        <test-method status="SKIP" signature="setUpMethod()[pri:0, instance:tests.LoginTest@73f792cf]" name="setUpMethod" is-config="true" duration-ms="0" started-at="2018-12-23T23:32:54Z" finished-at="2018-12-23T23:32:54Z">
+        <test-method status="PASS" signature="setUpMethod()[pri:0, instance:tests.LoginTest@3567135c]" name="setUpMethod" is-config="true" duration-ms="0" started-at="2018-12-25T18:24:49Z" finished-at="2018-12-25T18:24:49Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setUpMethod -->
-        <test-method status="SKIP" signature="testtestTestSelectFlight()[pri:0, instance:tests.LoginTest@73f792cf]" name="testtestTestSelectFlight" duration-ms="0" started-at="2018-12-23T23:32:54Z" finished-at="2018-12-23T23:32:54Z">
+        <test-method status="PASS" signature="testtestTestSelectFlight()[pri:0, instance:tests.LoginTest@3567135c]" name="testtestTestSelectFlight" duration-ms="1010" started-at="2018-12-25T18:24:49Z" finished-at="2018-12-25T18:24:50Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- testtestTestSelectFlight -->
-        <test-method status="SKIP" signature="tearDownMethod()[pri:0, instance:tests.LoginTest@73f792cf]" name="tearDownMethod" is-config="true" duration-ms="0" started-at="2018-12-23T23:32:54Z" finished-at="2018-12-23T23:32:54Z">
+        <test-method status="PASS" signature="tearDownMethod()[pri:0, instance:tests.LoginTest@3567135c]" name="tearDownMethod" is-config="true" duration-ms="0" started-at="2018-12-25T18:24:50Z" finished-at="2018-12-25T18:24:50Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDownMethod -->
-        <test-method status="SKIP" signature="setUpMethod()[pri:0, instance:tests.LoginTest@73f792cf]" name="setUpMethod" is-config="true" duration-ms="0" started-at="2018-12-23T23:32:54Z" finished-at="2018-12-23T23:32:54Z">
+        <test-method status="PASS" signature="setUpMethod()[pri:0, instance:tests.LoginTest@3567135c]" name="setUpMethod" is-config="true" duration-ms="0" started-at="2018-12-25T18:24:50Z" finished-at="2018-12-25T18:24:50Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setUpMethod -->
-        <test-method status="SKIP" signature="tearDownClass()[pri:0, instance:tests.LoginTest@73f792cf]" name="tearDownClass" is-config="true" duration-ms="0" started-at="2018-12-23T23:32:54Z" finished-at="2018-12-23T23:32:54Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- tearDownClass -->
-        <test-method status="SKIP" signature="teardown()[pri:0, instance:tests.LoginTest@73f792cf]" name="teardown" is-config="true" duration-ms="0" started-at="2018-12-23T23:32:54Z" finished-at="2018-12-23T23:32:54Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- teardown -->
-        <test-method status="SKIP" signature="testtestBookAflight()[pri:0, instance:tests.LoginTest@73f792cf]" name="testtestBookAflight" duration-ms="0" started-at="2018-12-23T23:32:54Z" finished-at="2018-12-23T23:32:54Z">
+        <test-method status="PASS" signature="testtestBookAflight()[pri:0, instance:tests.LoginTest@3567135c]" name="testtestBookAflight" duration-ms="5403" started-at="2018-12-25T18:24:50Z" finished-at="2018-12-25T18:24:55Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- testtestBookAflight -->
-        <test-method status="SKIP" signature="tearDownMethod()[pri:0, instance:tests.LoginTest@73f792cf]" name="tearDownMethod" is-config="true" duration-ms="0" started-at="2018-12-23T23:32:54Z" finished-at="2018-12-23T23:32:54Z">
+        <test-method status="PASS" signature="tearDownMethod()[pri:0, instance:tests.LoginTest@3567135c]" name="tearDownMethod" is-config="true" duration-ms="1" started-at="2018-12-25T18:24:55Z" finished-at="2018-12-25T18:24:55Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDownMethod -->
+        <test-method status="PASS" signature="tearDownClass()[pri:0, instance:tests.LoginTest@3567135c]" name="tearDownClass" is-config="true" duration-ms="0" started-at="2018-12-25T18:24:55Z" finished-at="2018-12-25T18:24:55Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDownClass -->
+        <test-method status="PASS" signature="teardown()[pri:0, instance:tests.LoginTest@3567135c]" name="teardown" is-config="true" duration-ms="0" started-at="2018-12-25T18:24:55Z" finished-at="2018-12-25T18:24:55Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- teardown -->
       </class> <!-- tests.LoginTest -->
     </test> <!-- Command line test -->
   </suite> <!-- Command line suite -->

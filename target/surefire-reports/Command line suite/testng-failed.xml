@@ -9,8 +9,13 @@
           <include name="testtestTestSelectFlight"/>
           <include name="testFlightFinder"/>
           <include name="testLoginPO"/>
+          <include name="tearDownMethod"/>
           <include name="testtestBookAflight"/>
+          <include name="tearDownClass"/>
+          <include name="teardown"/>
           <include name="setup"/>
+          <include name="testHomeButton"/>
+          <include name="setUpMethod"/>
         </methods>
       </class> <!-- tests.LoginTest -->
     </classes>

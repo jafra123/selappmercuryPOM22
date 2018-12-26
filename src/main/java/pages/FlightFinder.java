@@ -22,7 +22,7 @@ public class FlightFinder extends BasePage {
         // get the title of the page 
         return driver.getTitle();
      }
-     public FlightFinder TestFlightFinder(String fromPort,String fromMonth,String fromDay, String toPort,String toMonth, String toDay,String airline) {
+     public SelectFlight TestFlightFinder(String fromPort,String fromMonth,String fromDay, String toPort,String toMonth, String toDay,String airline) {
     //public void TestEnterFlighDetail(String fromPort,String fromMonth,String fromDay, String toPort,String toMonth, String toDay,String airline) {
         
        driver.findElement(By.xpath("//input[@name='tripType']")).click();
@@ -56,7 +56,7 @@ public class FlightFinder extends BasePage {
         driver.findElement(By.xpath("//input[@name='findFlights']")).click();   // By Xpath 
         System.out.println("clicked on continue");
         // DEPART       outFlight
-            return this; 
+            return new SelectFlight(driver); 
 }
    
    
